@@ -28,6 +28,22 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.instagram-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 12px rgba(220, 39, 67, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
 .instagram-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(220, 39, 67, 0.4);
@@ -36,6 +52,19 @@
 
 .instagram-btn svg {
   fill: currentColor;
+  flex-shrink: 0;
+}
+
+/* Mobile Screen Fix (Under 768px wide) */
+@media (max-width: 768px) {
+  .instagram-btn {
+    padding: 8px; /* Circular button on mobile */
+    border-radius: 50%;
+  }
+  
+  .instagram-btn span {
+    display: none; /* Hides text on mobile */
+  }
 }
     </style>
 </head>
