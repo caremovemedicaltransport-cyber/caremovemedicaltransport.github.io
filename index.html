@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window,document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js'); 
+        
+        fbq('init', '1801351714623648'); 
+        fbq('track', 'PageView');
+    </script>
+    
+    <noscript> 
+        <img height="1" width="1" 
+            src="https://www.facebook.com/tr?id=1801351714623648&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareMove 香港專業非緊急醫護專車接送 | 卧床覆診 / 輪床輪椅接送 / 陪診服務 / 護士跟車</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        .bg-medical-blue { background-color: #0f4c81; }
+        .text-medical-blue { color: #0f4c81; }
+        .bg-soft-blue { background-color: #f0f7ff; }
+
+        .instagram-btn {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+          padding: 10px 20px;
+          background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+          color: #ffffff;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+          font-size: 15px;
+          font-weight: 600;
+          text-decoration: none;
+          border-radius: 9999px;
+          box-shadow: 0 4px 12px rgba(220, 39, 67, 0.3);
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+          white-space: nowrap;
+        }
+
+        .instagram-btn:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 6px 16px rgba(220, 39, 67, 0.4);
+          color: #ffffff;
+        }
+
+        .instagram-btn svg {
+          fill: currentColor;
+          flex-shrink: 0;
+        }
+
+        /* Mobile Screen Fix (Under 768px wide) */
+        @media (max-width: 768px) {
+          .instagram-btn {
+            padding: 10px;
+            border-radius: 50%;
+          }
+          .instagram-btn span {
+            display: none;
+          }
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-gray-50 pt-20">
+
+    <!-- 導航列 Header -->
+    <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Logo Section -->
+            <div class="flex items-center space-x-3">
+                <img src="Company_Logo-removebg-preview.png" alt="CareMove Logo" class="h-16 md:h-28 w-auto object-contain">
+                <div>
+                    <span class="text-xl font-bold text-gray-900 block leading-none">CareMove</span>
+                    <span class="text-xs text-blue-600 font-medium tracking-wider">醫護專車</span>
+                </div>
+            </div>
+            
+            <!-- Navigation Links (Desktop) -->
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
+                <a href="#about" class="hover:text-blue-600 transition">關於我們</a>
+                <a href="#services" class="hover:text-blue-600 transition">服務項目</a>
+                <a href="#plans" class="hover:text-blue-600 transition">服務方案</a>
+                <a href="#process" class="hover:text-blue-600 transition">護送流程</a>
+                <a href="#equipment" class="hover:text-blue-600 transition">專業裝備</a>
+                <a href="#pricing" class="hover:text-blue-600 transition">收費與預約</a>
+            </nav>
+
+            <!-- Action Buttons Wrapper -->
+            <div class="flex items-center space-x-2">
+                <!-- Instagram Button -->
+                <a href="https://www.instagram.com/caremovemedicaltransport/" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="instagram-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                    <span>追蹤 Instagram</span>
+                </a>
+
+                <!-- WhatsApp Button -->
+                <a href="https://wa.me/85251042759" 
+                   target="_blank" 
+                   onclick="fbq('track', 'Contact', {content_name: 'Header WhatsApp'});"
+                   class="bg-green-500 hover:bg-green-600 text-white p-2.5 md:px-5 md:py-2.5 rounded-full font-medium flex items-center justify-center space-x-0 md:space-x-2 shadow-sm transition">
+                    <i class="fa-brands fa-whatsapp text-xl md:text-lg"></i>
+                    <span class="hidden md:inline">即時預約 / 查詢</span>
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- 主頁 Hero Section -->
+    <section class="pt-32 pb-20 bg-soft-blue">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <div class="inline-flex items-center space-x-2 bg-yellow-100 text-yellow-800 text-xs font-bold px-3 py-1.5 rounded-full shadow-sm">
+                    <i class="fa-solid fa-gift"></i>
+                    <span>新服務推出・首單全單 8 折優惠中！</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+                    輪床輪椅接送 病房直達家中<br>
+                    <span class="text-blue-600">專業福祉專車 隨行陪診照護</span>
+                </h1>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    CareMove 為出院、專科覆診及院舍陪診提供安全、無障礙點對點接送。自備香港認證福祉車及專業輪椅/輪床，給家人最安心的出行體驗。
+                </p>
+                <div class="pt-2 flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/85251042759" target="_blank" onclick="fbq('track', 'Contact', {content_name: 'Hero Book Now'});" class="bg-blue-600 hover:bg-blue-700 text-white text-center px-8 py-3.5 rounded-xl font-semibold shadow-md transition">
+                        預約專車 / 陪診服務
+                    </a>
+                    <a href="#plans" class="bg-white hover:bg-gray-50 text-gray-700 border border-gray-300 text-center px-8 py-3.5 rounded-xl font-semibold transition">
+                        查看最新服務方案
+                    </a>
+                </div>
+                <div class="grid grid-cols-3 gap-4 pt-6 border-t border-gray-200">
+                    <div>
+                        <p class="text-2xl font-bold text-blue-600">100%</p>
+                        <p class="text-xs text-gray-500">每程清潔消毒</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-blue-600">門對門</p>
+                        <p class="text-xs text-gray-500">床對床無障礙接送</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-blue-600">透明</p>
+                        <p class="text-xs text-gray-500">一口價無隱藏費用</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 space-y-4">
+                    <div class="bg-blue-50 rounded-xl p-4 flex items-center space-x-4">
+                        <i class="fa-solid fa-user-nurse text-3xl text-blue-600"></i>
+                        <div>
+                            <h3 class="font-bold text-gray-900">2 對 1 專業隨行照顧</h3>
+                            <p class="text-sm text-gray-600">專屬司機搭配陪診員/護士，協助掛號、陪診、取藥</p>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 rounded-xl p-4 flex items-center space-x-4">
+                        <i class="fa-solid fa-van-shuttle text-3xl text-blue-600"></i>
+                        <div>
+                            <h3 class="font-bold text-gray-900">香港認證福祉車</h3>
+                            <p class="text-sm text-gray-600">斜道/升降上落、安全固定鎖、家屬可舒適隨行</p>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 rounded-xl p-4 flex items-center space-x-4">
+                        <i class="fa-solid fa-wheelchair text-3xl text-blue-600"></i>
+                        <div>
+                            <h3 class="font-bold text-gray-900">自備專業輪椅 / 輪床</h3>
+                            <p class="text-sm text-gray-600">無需頻繁轉移，提供平穩安全的門對門搬運</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 最新服務方案及優惠 Section (全新新增) -->
+    <section id="plans" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">NEW SERVICES</span>
+                <h2 class="text-3xl font-bold text-gray-900 mt-3">最新陪診及包車服務方案</h2>
+                <p class="text-gray-600 mt-4">點對點無障礙專業接送，首單預約即享 <span class="text-red-600 font-bold">全單 8 折優惠</span>！</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                
+                <!-- 方案 1: 全包套裝 -->
+                <div class="bg-gradient-to-b from-blue-50 to-white rounded-3xl p-8 border-2 border-blue-500 shadow-xl relative overflow-hidden flex flex-col justify-between">
+                    <div class="absolute top-0 right-0 bg-blue-600 text-white text-xs font-bold px-4 py-1.5 rounded-bl-xl">
+                        熱門首選・首單8折
+                    </div>
+                    <div>
+                        <div class="w-12 h-12 bg-blue-600 text-white rounded-2xl flex items-center justify-center text-xl font-bold mb-4">
+                            <i class="fa-solid fa-hand-holding-medical"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">全包套裝</h3>
+                        <p class="text-blue-600 font-medium text-sm mb-4">覆診接送連陪診員</p>
+
+                        <div class="bg-white p-4 rounded-2xl border border-blue-100 mb-6 shadow-sm">
+                            <div class="flex items-baseline space-x-2">
+                                <span class="text-3xl font-extrabold text-blue-700">$999</span>
+                                <span class="text-sm text-gray-500">/ 最低 3 小時</span>
+                            </div>
+                            <p class="text-xs text-gray-500 mt-1">後續加時：$250 / 小時</p>
+                        </div>
+
+                        <ul class="space-y-3 text-sm text-gray-700 mb-8">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2.5"></i><strong>專屬司機 + 陪診員（2 對 1 專業照顧）</strong></li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2.5"></i>協助醫院掛號、陪診、取藥全程包辦</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2.5"></i>自備專業輪椅 / 輪床</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2.5"></i>香港認證福祉車點對點無障礙接送</li>
+                        </ul>
+                    </div>
+
+                    <a href="https://wa.me/85251042759?text=我想查詢全包套裝（覆診接送連陪診員）" 
+                       target="_blank" 
+                       onclick="fbq('track', 'Contact', {content_name: 'Book Full Package'});"
+                       class="block text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 rounded-xl shadow-md transition">
+                        立即預約全包套裝 (8折)
+                    </a>
+                </div>
+
+                <!-- 方案 2: 專車接送 -->
+                <div class="bg-white rounded-3xl p-8 border border-gray-200 shadow-md relative overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-gray-100 text-blue-600 rounded-2xl flex items-center justify-center text-xl font-bold mb-4">
+                            <i class="fa-solid fa-van-shuttle"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">專車接送</h3>
+                        <p class="text-gray-500 font-medium text-sm mb-4">覆診按時包車服務</p>
+
+                        <div class="bg-gray-50 p-4 rounded-2xl border border-gray-100 mb-6">
+                            <div class="flex items-baseline space-x-2">
+                                <span class="text-3xl font-extrabold text-gray-900">$559</span>
+                                <span class="text-sm text-gray-500">/ 最低 2 小時</span>
+                            </div>
+                            <p class="text-xs text-gray-500 mt-1">後續加時：$200 / 小時</p>
+                        </div>
+
+                        <ul class="space-y-3 text-sm text-gray-700 mb-8">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2.5"></i><strong>專屬司機點對點無障礙接送</strong></li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2.5"></i>輪椅升降設備及完整安全防護</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2.5"></i>車廂寬敞，家屬可舒適隨行</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2.5"></i>自備專業輪椅 / 輪床</li>
+                        </ul>
+                    </div>
+
+                    <a href="https://wa.me/85251042759?text=我想查詢專車接送包車服務" 
+                       target="_blank" 
+                       onclick="fbq('track', 'Contact', {content_name: 'Book Shuttle Package'});"
+                       class="block text-center bg-gray-900 hover:bg-black text-white font-bold py-3.5 rounded-xl transition">
+                        立即預約專車包車 (8折)
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- 單程一口價補充說明 -->
+            <div class="mt-12 bg-soft-blue rounded-2xl p-6 max-w-5xl mx-auto border border-blue-100 text-center">
+                <h4 class="font-bold text-gray-900 mb-2">亦提供【單程一口價】接送服務（已包含護士陪行費用）：</h4>
+                <div class="flex flex-wrap justify-center gap-6 text-sm font-semibold text-gray-700 mt-3">
+                    <span class="bg-white px-4 py-2 rounded-lg shadow-sm">🔹 同區一口價：<span class="text-blue-600 font-bold">$384 / 程</span> <span class="text-xs text-gray-400 line-through">$480</span></span>
+                    <span class="bg-white px-4 py-2 rounded-lg shadow-sm">🔹 跨區一口價：<span class="text-blue-600 font-bold">$520 / 程</span> <span class="text-xs text-gray-400 line-through">$650</span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心服務項目 Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-gray-900">專業醫療護送場景</h2>
+                <p class="text-gray-600 mt-4">針對不同出行需求，提供最適合長者及行動不便者的專屬醫療接送方案</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 text-xl font-bold mb-6">
+                        <i class="fa-solid fa-hospital-user"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">醫院出院 / 轉院護送</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        護士直達病房接送，協助辦理出院手續、領取藥物，並安全護送長者回到家中床前。
+                    </p>
+                    <ul class="text-xs text-gray-500 space-y-2">
+                        <li><i class="fa-solid fa-check text-green-500 mr-1.5"></i>代收及整理診斷報告</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-1.5"></i>床對床無縫轉換</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 text-xl font-bold mb-6">
+                        <i class="fa-solid fa-stethoscope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">專科覆診 / 洗腎專車</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        定期往返診所、洗腎中心或醫院專科覆診，按時準確接送，免卻家人請假奔波。
+                    </p>
+                    <ul class="text-xs text-gray-500 space-y-2">
+                        <li><i class="fa-solid fa-check text-green-500 mr-1.5"></i>定時來回接接送服務</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-1.5"></i>舒適寬敞車廂體驗</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 text-xl font-bold mb-6">
+                        <i class="fa-solid fa-house-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">安老院舍 / 跨區接送</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        提供跨區或點對點院舍入住、休養轉送服務，全車配置安全固定扣，行程平穩順暢。
+                    </p>
+                    <ul class="text-xs text-gray-500 space-y-2">
+                        <li><i class="fa-solid fa-check text-green-500 mr-1.5"></i>專業斜道輪椅輕鬆上落</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-1.5"></i>可容納 1-2 位家屬隨行</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4步護送流程 Section -->
+    <section id="process" class="py-20 bg-soft-blue">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-gray-900">4 步安心護送流程</h2>
+                <p class="text-gray-600 mt-4">從病房到家門，我們為您妥善安排每一個細節</p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 relative">
+                    <span class="text-4xl font-extrabold text-blue-100 absolute top-4 right-4">01</span>
+                    <div class="w-10 h-10 bg-blue-600 text-white rounded-lg flex items-center justify-center font-bold mb-4">
+                        <i class="fa-solid fa-door-open"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-2">病房接送</h4>
+                    <p class="text-xs text-gray-600 leading-relaxed">護士親自前往病房，協助平穩轉移至輪椅或輪床，準備安全上車。</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 relative">
+                    <span class="text-4xl font-extrabold text-blue-100 absolute top-4 right-4">02</span>
+                    <div class="w-10 h-10 bg-blue-600 text-white rounded-lg flex items-center justify-center font-bold mb-4">
+                        <i class="fa-solid fa-file-medical"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-2">代收文件</h4>
+                    <p class="text-xs text-gray-600 leading-relaxed">協助跟進出院手續，代為整理及保管出院藥物、診斷報告與護理須知。</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 relative">
+                    <span class="text-4xl font-extrabold text-blue-100 absolute top-4 right-4">03</span>
+                    <div class="w-10 h-10 bg-blue-600 text-white rounded-lg flex items-center justify-center font-bold mb-4">
+                        <i class="fa-solid fa-car-side"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-2">安全送達</h4>
+                    <p class="text-xs text-gray-600 leading-relaxed">專車直達目的地，提供門對門/床對床安全搬運，行程全程舒適平穩。</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 relative">
+                    <span class="text-4xl font-extrabold text-blue-100 absolute top-4 right-4">04</span>
+                    <div class="w-10 h-10 bg-blue-600 text-white rounded-lg flex items-center justify-center font-bold mb-4">
+                        <i class="fa-solid fa-notes-medical"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-2">護理交代</h4>
+                    <p class="text-xs text-gray-600 leading-relaxed">護士親自向家屬詳細說明醫生囑咐、服藥時間表及日常居家照護重點。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 專車及裝備展示 Section -->
+    <section id="equipment" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-gray-900">車隊裝備與衛生標準</h2>
+                <p class="text-gray-600 mt-4">嚴謹的安全固定規格與每程消毒，確保行程衛生無虞</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="border border-gray-200 rounded-2xl p-6 flex space-x-5 items-start">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-pump-soap"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 text-lg mb-1">每程消毒清潔機制</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            每次完成接送任務後，車廂及輪椅/擔架設施均使用醫療級消毒用品徹底擦拭，確保車廂無菌潔淨。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-2xl p-6 flex space-x-5 items-start">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 text-lg mb-1">專業安全固定鎖扣</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            配備符合國際安全標準的輪椅地扣與獨立安全帶系統，車輛行駛過程中極致平穩安全。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-2xl p-6 flex space-x-5 items-start">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 text-lg mb-1">隨車基礎監測裝備</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            車上備有電子血壓計、額溫槍及血氧儀，護士隨時監測長者途中的生命體徵變化。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-2xl p-6 flex space-x-5 items-start">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-couch"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 text-lg mb-1">寬敞無障礙空間</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            選用香港認證福祉車型，配備低斜道/升降設備，並備有家屬專屬舒適座位，可陪伴同行。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 預約及聯絡 Section -->
+    <section id="pricing" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+            <h2 class="text-3xl md:text-4xl font-bold">預約 CareMove 醫護專車</h2>
+            <p class="text-gray-400 text-base max-w-2xl mx-auto">
+                請提前預約，我們將盡快為您確認行程與安排。支援轉數快 (FPS)、PayMe、支付寶香港及現金付款。
+            </p>
+
+            <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700 text-left space-y-4 max-w-lg mx-auto">
+                <h3 class="text-lg font-bold text-blue-400 border-b border-gray-700 pb-3">預約所需資料：</h3>
+                <ul class="text-sm text-gray-300 space-y-2">
+                    <li>• 病人姓名及行動能力狀況（行走 / 輪椅 / 床對床）</li>
+                    <li>• 預約日期與上落車時間</li>
+                    <li>• 上下車地點（請註明大廈是否有電梯）</li>
+                    <li>• 所需服務方案（全包套裝 / 專車接送 / 單程點對點）</li>
+                </ul>
+            </div>
+
+            <!-- Instagram Button -->
+            <a href="https://www.instagram.com/caremovemedicaltransport/" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="instagram-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+              <span>追蹤我們的 Instagram</span>
+            </a>
+
+            <div class="pt-4">
+                <a href="https://wa.me/85251042759" 
+                   target="_blank" 
+                   onclick="fbq('track', 'Contact', {content_name: 'Footer WhatsApp'});"
+                   class="inline-flex items-center space-x-3 bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-4 rounded-xl text-lg shadow-lg transition">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    <span>點擊開啟 WhatsApp 51042759 預約</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 Footer -->
+    <footer class="bg-black text-gray-500 py-8 text-center text-xs border-t border-gray-800">
+        <p>© 2026 CareMove 醫護專車. All Rights Reserved.</p>
+        <p class="mt-2 text-gray-600">本服務為非緊急醫療接送服務，非 999 緊急救護車。如遇到危急情況請即時撥打 999。</p>
+    </footer>
+
+</body>
+</html>
